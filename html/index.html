@@ -3,9 +3,34 @@
 <html>
 
 <head>
-    <title>HTML DEMO</title>
+    <title>HTML DEMO 123</title>
+    <!-- title; style; link; script; meta; base; -->
+    <!-- meta: character set; Page description; keywords; author; refresh; viewport settings -->
+
     <!-- information to browser -->
     <meta charset="UTF-8">
+
+    <!-- keywords: define the keywords for the search engine -->
+    <!-- MOST IMPORTANT THING (5/5) -->
+    <meta name="keywords" content="cakes, muffins, pastries, cookie">
+    <meta name="keywords" content="xyz, abc">
+    <!-- require for SEO; 4/5 -->
+    <meta name="description" content="Sell best bakery items in PONDICHERRY">
+
+    <!-- Author (individual/ company) of the website -->
+    <meta name="author" content="Tom and Jerry">
+
+    <!-- refresh rate of the website-->
+    <!-- the value is in seconds -->
+    <meta http-equiv="refresh" content="20">
+
+    <!-- adding view port -->
+    <!-- to be discussed in CSS Media query -->
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <!-- to be discussed in CSS Media query -->
+
+    <!-- base -->
+    <base href="api server name">
 </head>
 
 <body>
@@ -205,14 +230,33 @@
     <input type="checkbox" > Aadhar
     <input type="checkbox" > PAN -->
 
-    <form >
+    <!-- if button type is submit only then form validation will work; else it will not work -->
+    <form>
         <input type="text" required maxlength="5" minlength="4">
-        <input type="email" name="" id="" placeholder="enter email" required>
-        <input type="number" name="" id="" min="10" placeholder="enter number" disabled>
-        <!-- if button type is submit only then form validation will work; else it will not work -->
+        <input type="email" placeholder="enter email" required>
+        <input type="number" min="10" placeholder="enter number" disabled>
         <input type="submit" value="Submit">
     </form>
+    <!-- https://www.youtube.com/embed/tYwg_rGKyyA -->
 
+    <!-- MEDIA TAGS -->
+    <!-- VIDEO tag -->
+    <!-- file format supported: mp4, ogg, webm -->
+    <!-- muted: the video will be played without any sound effect -->
+    <!-- controls: for getting the various controls -->
+    <!-- autoplay: starts playing automatically for the 1st time/ only once -->
+    <!-- <video width="320" height="240" autoplay muted controls>
+        <source src="../video.mp4" type="video/mp4">
+    </video> -->
+
+    <!-- controls is mandatory -->
+    <audio controls autoplay muted>
+        <source src="">
+    </audio>
+
+    <!-- iframe -->
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/tYwg_rGKyyA">
+    </iframe>
 
 
 </body>
