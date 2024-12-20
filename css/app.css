@@ -1,0 +1,16 @@
+/* id is represented using hash/ pound/ # */
+/* id has highest priority */
+/* #country {
+    background-color: lightgreen;
+} */
+
+/* class is represented using a dot . */
+.user-detail {
+    background-color: blue;
+}
+
+.test1 {
+    background-color: orange;
+}
+
+/* specificity */
