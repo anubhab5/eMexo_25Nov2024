@@ -6,11 +6,95 @@
 
 /* class is represented using a dot . */
 .user-detail {
-    background-color: blue;
+  background-color: blue;
 }
 
 .test1 {
-    background-color: orange;
+  background-color: orange;
+}
+
+.border-me1 {
+  border: solid 2px green;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.border-me {
+  border: solid 2px red;
+  /* gap between the content and the border is called padding */
+  /* short-hand form */
+  /* padding: 10px;  */
+
+  /* first val is left; then it moves clock wise */
+  /* 10px=> top */
+  /* 20px => right */
+  /* 30px => bottom */
+  /* 40px => left */
+  /* padding: 10px 20px 30px 40px; */
+
+  /* padding: 10px 20px 10px 20px; */
+  /* first value is top and bottom */
+  /* second val is left and right */
+  padding: 10px 20px;
+  /* padding-left: 100px;
+  padding-right: 50px; */
+
+  /* padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px; */
+
+  /* --------------------------------------- */
+  /* margin: add a space outside the border till the nearest other content */
+  /* all ways for adding the padding values are applicable in margin also */
+  /* margin: 30px;   */
+  /* margin-top: 8px; */
+}
+
+/* all text css props will be here */
+.text {
+  /* color */
+  color: green;
+
+  /* text transformation */
+  text-transform: uppercase;
+  text-transform: lowercase;
+  /* first character of a word is capitalized! */
+  text-transform: capitalize;
+  text-transform: unset;
+
+  /* text decoration */
+  text-decoration-line: line-through;
+  text-decoration-line: overline;
+  text-decoration-line: overline underline;
+  text-decoration-line: underline;
+  text-decoration-color: blue;
+  text-decoration-style: dashed;
+  text-decoration-style: dotted;
+  text-decoration-style: double;
+  text-decoration-thickness: 2px;
+  text-decoration: unset;
+
+  /* text spacing */
+  letter-spacing: 1px;
+  word-spacing: 20px;
+  /* there will be no line breaks/ whites spaces */
+  white-space: nowrap;
+
+  /* text alignment */
+  text-align: left;
+  text-align: right;
+  text-align: center;
+
+  /* text shadow */
+  /* 1st value determines the shadow to be pushed by x unit along x axis */
+  /* 2nd value determines the shadow to be pushed by x unit along y axis */
+  /* 3rd value determines the blur radius of the shadow */
+  text-shadow: 5px 5px 2px red;
+  text-shadow: 5px 5px 2px red, 5px 5px 2px rgb(182, 232, 30);
+
+
+
 }
 
 /* specificity */
