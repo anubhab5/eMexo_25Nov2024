@@ -92,9 +92,79 @@
   /* 3rd value determines the blur radius of the shadow */
   text-shadow: 5px 5px 2px red;
   text-shadow: 5px 5px 2px red, 5px 5px 2px rgb(182, 232, 30);
+}
 
+.demo {
+  background-color: red;
+}
+
+/* element level selector */
+/* p {
+  background-color: yellow;
+}
+
+.span-class {
+  background-color: aqua;
+}
+
+span {
+  background-color: greenyellow;
+} */
+
+/* specificity */
+/* element < class which comes last < id < inline */
+
+/* position */
+.position-demo {
+  /* position: static; */
+  /* position: relative; */
+  position: fixed;
+  border: solid 1px red;
+  top: 0;
+  /* top and bottom should not be used together */
+  /* top: 10px; */
+  /* bottom: 10px; */
+  /* right and left should not be used together */
+  /* right: 20px; */
+  /* left: 20px; */
 
 
 }
 
-/* specificity */
+/* .test1 {
+  position: relative;
+  top: 20px;
+} */
+
+.grand-parent {
+  position: relative;
+  border: solid 1px blue;
+  position: relative;
+  width: 800px;
+  height: 400px;
+}
+
+.parent {
+  margin-top: 10px;
+  position: relative;
+  border: solid 1px red;
+  width: 400px;
+  height: 200px;
+}
+
+.child {
+  position: absolute;
+  border: solid 1px green;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 200px;
+  color: white;
+}
+
+.heading {
+  /* combination of relative and fixed */
+  position: sticky;
+  top: 0;
+}
+/* static; relative; fixed; absolute; sticky */
