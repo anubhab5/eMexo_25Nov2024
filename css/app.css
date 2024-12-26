@@ -1,3 +1,16 @@
+/* universal selector */
+/* default CSS properties should be added in universal selector */
+* {
+  /* color: red;
+  background-color: yellow; */
+  /* margin: 0;
+  padding: 0; */
+}
+
+/* 
+universal (*) < element selector < class selector < id selector < inline style
+*/
+
 /* id is represented using hash/ pound/ # */
 /* id has highest priority */
 /* #country {
@@ -5,7 +18,7 @@
 } */
 
 /* class is represented using a dot . */
-.user-detail {
+/* .user-detail {
   background-color: blue;
 }
 
@@ -17,7 +30,7 @@
   border: solid 2px green;
   padding: 10px;
   margin-bottom: 10px;
-}
+} */
 
 .border-me {
   border: solid 2px red;
@@ -95,7 +108,7 @@
 }
 
 .demo {
-  background-color: red;
+  /* background-color: red; */
 }
 
 /* element level selector */
@@ -127,8 +140,6 @@ span {
   /* right and left should not be used together */
   /* right: 20px; */
   /* left: 20px; */
-
-
 }
 
 /* .test1 {
@@ -146,6 +157,7 @@ span {
 
 .parent {
   margin-top: 10px;
+  margin-left: 10px;
   position: relative;
   border: solid 1px red;
   width: 400px;
@@ -155,8 +167,8 @@ span {
 .child {
   position: absolute;
   border: solid 1px green;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 500px;
   height: 100px;
   width: 200px;
   color: white;
@@ -168,3 +180,126 @@ span {
   top: 0;
 }
 /* static; relative; fixed; absolute; sticky */
+
+.display-demo {
+  /* hides the element */
+  display: none;
+  /* convert any (either inline/ block) element to inline type */
+  display: inline;
+}
+
+.block-me {
+  /* convert any element to block type */
+  display: block;
+}
+
+/* width and height CANNOT be applied to any inline elements   */
+/* .span-demo {
+  border: solid 1px red;
+  width: 300px;
+  height: 100px;
+} */
+
+/* width and height CAN be added to block level elements */
+/* .div-demo {
+  margin-top: 10px;
+  border: solid 1px blue;
+  width: 300px;
+  height: 100px;
+} */
+
+/* inline-block helps us to add with and height to any inline element but keeping its original behavior intact */
+/* this is an inline element style */
+.span-demo {
+  border: solid 1px red;
+  width: 300px;
+  height: 100px;
+  display: inline-block;
+}
+
+/* applied on block level element */
+.div-demo {
+  margin-top: 10px;
+  border: solid 1px blue;
+  width: 300px;
+  height: 100px;
+  display: inline-block;
+}
+
+/* 
+NOTE::: INLINE BLOCK
+--- inline elements
+1. if applied on inline element, then width and height can be added (it takes only that much of space it is needed to fit in)
+2. it will not break the line
+--- block elements
+1. If applied on block level element then it will take the width and height specified and will not break the line (behave like inline)
+*/
+
+.container {
+  display: flex;
+  /* by default the value is row */
+  flex-direction: column;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  justify-content: center;
+  /* equal spacing between elements */
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: start;
+  justify-content: end;
+
+  /* if flex-direction is column then justify content behaviors will not work */
+  /* we need to use align-items */
+  /* default: start */
+  align-items: center;
+  align-items: end;
+  align-items: start;
+}
+
+.box {
+  color: green;
+}
+
+
+/* a {
+color: hotpink;
+} */
+
+/* pseudo class */
+/* hover effect */
+/* a:hover {
+  color: yellow;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f44336;
+  color: white;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.heading-demo {
+  font-size: 10px;
+} */
+
+/* ul {
+  list-style-type: none;
+  list-style-type: circle;
+  list-style-type: square;
+  list-style-type: disc;
+  list-style-type: decimal;
+  list-style-type: lower-roman;
+  list-style-type: upper-roman;
+}
+
+ol {
+  list-style-type: circle;
+} */
