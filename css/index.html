@@ -260,6 +260,8 @@
 
     <!-- ------------------------------------------------------------------ -->
     <!-- 26 Dec 2024 -->
+    <!-- designing link, display property, list design -->
+    <!-- ------------------------------------------------------------------ -->
 
     <!-- <div class="display-demo">This is div 1</div>
     <div class="display-demo">This is div 2</div>
@@ -297,7 +299,7 @@
 
     <h1 class="heading-demo">This is heading</h1> -->
 
-    <ul>
+    <!-- <ul>
       <li>List 1</li>
       <li>list 2</li>
       <li>list 3</li>
@@ -307,7 +309,116 @@
       <li>list 1</li>
       <li>list 2</li>
       <li>list 3</li>
-    </ol>
+    </ol> -->
 
+    <!-- ------------------------------------------------------------------ -->
+    <!-- 27 Dec 2024 -->
+    <!-- combinators, z-index, opacity, pseudo-class, pseudo elements -->
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- 30 Dec 2024 -->
+    <!-- specifity, table, units, fonts, media-query, viewport, border-radius -->
+
+    <!-- There are 4 different Combinators in CSS3 -->
+    <!-- 1. Descendant Combinator -->
+    <!-- symbol/ syntax : space -->
+    <!-- <div class="grandd-parent">
+      <p>
+        This is para 1::: child of div
+        <p>this is grand child para</p>
+        <span>This is span grand child ::: child of para</span>
+      </p>
+      <span>This is span 1 ::: child of div</span>
+      <p>this is a child para wrt div</p>
+    </div>
+    <p>this is a sibling para 1 wrt div</p>
+    <p>this is a sibling para 2 wrt div</p> -->
+
+    <!-- 2. Child combinator -->
+    <!-- symbol/ syntax : > -->
+    <!-- <div class="grandd-parent">
+      <p>
+        This is para 1::: child of div
+        <section>
+          <p>this is grand child para</p>
+        </section>
+        <span>This is span grand child ::: child of para</span>
+      </p>
+      <span>This is span 1 ::: child of div</span>
+      <p>this is a child para wrt div</p>
+    </div>
+    <p>this is a sibling para 1 wrt div</p>
+    <p>this is a sibling para 2 wrt div</p> -->
+
+    <!-- 3. Adjacent Sibling Combinator -->
+    <!-- symbol/ syntax : + -->
+    <!-- Note: combinators only work with elements after the targetted one -->
+    <!-- <p>This is para</p>
+    <div class="grandd-parent">
+      <p>
+        This is para 1::: child of div
+        <section>
+          <p>this is grand child para</p>
+        </section>
+        <span>This is span grand child ::: child of para</span>
+      </p>
+      <span>This is span 1 ::: child of div</span>
+      <p>this is a child para wrt div</p>
+    </div>
+    <span>this is a sibling span wrt div</span>
+    <p>this is a sibling para 1 wrt div</p>
+    <p>this is a sibling para 2 wrt div</p> -->
+
+    <!-- 4. General Sibling Combinator -->
+    <!-- symbol/ syntax : ~ -->
+    <!-- <p>This is para</p>
+    <div class="grandd-parent">
+      <p>
+        This is para 1::: child of div
+        <section>
+          <p>this is grand child para</p>
+        </section>
+        <span>This is span grand child ::: child of para</span>
+      </p>
+      <span>This is span 1 ::: child of div</span>
+      <p>this is a child para wrt div</p>
+    </div>
+    <span>this is a sibling span wrt div</span>
+    <p>this is a sibling para 1 wrt div</p>
+    <p>this is a sibling para 2 wrt div</p> -->
+
+    <!-- pseduo class -->
+    <!-- it is used to define a special state, for example mouse hover on a link -->
+    <!-- syntax -->
+    <!-- selector:pseudo-class -->
+    <!-- <a href="http://www.amazon.com">Amazon</a>
+    <a href="http://www.google.com">Google</a> -->
+    <!-- <span>1st span</span> -->
+    <!-- <p>this is para 1</p>
+    <p>this is para 2</p>
+    <div>
+      <span>this is span</span>
+      <p>this is para 1 inside div</p>
+      <p>this is para 2 inside div</p>
+    </div>
+    <span>more span</span>
+    <p>some more para</p> -->
+
+    <!-- pseduo elements -->
+    <!-- it is used to style a particular part of an element -->
+    <!-- syntax -->
+    <!-- selector::pseudo-element -->
+    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe culpa</p> -->
+
+    <!-- <h1>this is heading</h1>
+    <img src="../html/img_1.jpg" alt="nature" /> -->
+
+    <h2 style="border: solid 1px red">this is heading</h2>
+    <img
+      style="border: solid 8px rgb(68, 246, 41)"
+      src="../html/img_1.jpg"
+      alt="nature"
+    />
+    <span style="border: solid 1px red">this is span</span>
   </body>
 </html>

@@ -263,7 +263,6 @@ NOTE::: INLINE BLOCK
   color: green;
 }
 
-
 /* a {
 color: hotpink;
 } */
@@ -303,3 +302,114 @@ color: hotpink;
 ol {
   list-style-type: circle;
 } */
+
+/* descendant combinator */
+/* .grandd-parent p {
+  background-color: yellow;
+}
+
+.grandd-parent span {
+  background-color: aqua;
+} */
+
+/* child combinator */
+/* .parent > .child */
+/* only direct children will be selected */
+/* div > p {
+  background-color: yellow;
+} */
+
+/* Adjacent/ next sibling combinator */
+/* div + p {
+  background-color: yellow;
+} */
+
+/* sibling */
+/* div ~ p {
+  background-color: yellow;
+} */
+
+/* pseudo class */
+/* no space should be applied before or after the colon :  */
+/* a:link {
+  color: tomato;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: yellow;
+  cursor: wait;
+}
+
+a:active {
+  color: blue;
+} */
+
+/* p:first-child {
+  background-color: yellow;
+}
+
+span:first-child {
+  background-color: aqua;
+}
+
+p:last-child {
+  background-color: red;
+} */
+
+/* pseudo element */
+p::first-line {
+  color: red;
+}
+
+p::first-letter {
+  color: rgb(79, 192, 41);
+  font-size: 20px;
+}
+
+p::selection {
+  color: red;
+  background-color: yellow;
+}
+
+p::before {
+  content: "Hello ";
+  color: red;
+}
+
+p::after {
+  content: " Bye ";
+  color: red;
+}
+
+/* opacity adds a transparency level to an element */
+/* value ranges from 0 to 1 */
+/* 0 means invisible */
+/* it can be also represented in percent form [0 to 100%] */
+/* h1 {
+  opacity: 0;
+}
+
+h1:hover {
+  opacity: 1;
+  cursor: pointer;
+} */
+
+/* z-index property works like a stack */
+/* any element with higher z-index will be on top */
+/* only on absolute positioned elements */
+h1 {
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+img {
+  width: 300px;
+  height: 150px;
+}
