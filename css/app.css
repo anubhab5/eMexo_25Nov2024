@@ -1,10 +1,13 @@
 /* universal selector */
 /* default CSS properties should be added in universal selector */
 * {
-  /* color: red;
-  background-color: yellow; */
-  /* margin: 0;
-  padding: 0; */
+  font-family: "Sofia", serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
 }
 
 /* 
@@ -401,7 +404,7 @@ h1:hover {
 /* z-index property works like a stack */
 /* any element with higher z-index will be on top */
 /* only on absolute positioned elements */
-h1 {
+/* h1 {
   color: white;
   position: absolute;
   left: 0;
@@ -412,4 +415,117 @@ h1 {
 img {
   width: 300px;
   height: 150px;
+} */
+
+/* table CSS */
+#team-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#team-table td,
+#team-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#team-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#team-table tr:hover {
+  background-color: #ddd;
+}
+
+#team-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* even, odd, number */
+/* li:nth-child(1) {
+  background-color: red;
+} */
+/* it is better to use n-th child either by using an element or a class */
+/* .select-me p:nth-child(even) {
+  background-color: yellow;
+} */
+
+/* Attribute Selector */
+/* simple attribute selector */
+/* any anchor with an attribute target will get the below style */
+/* a[target] {
+  background-color: yellow;
+} */
+
+/* if the value is blank then only the below style will be applied */
+/* exact match */
+/* a[target="_blank"] {
+  background-color: aqua;
+} */
+
+/* if the word is found in a sentence/ phrase then the style will be applied */
+/* syntax is tilde ~ */
+/* [title~="span"] {
+  background-color: yellow;
+} */
+
+/* if the value starts with the given word then the style will be applied */
+/* syntax is caret ^ */
+/* [title^="this"] {
+  background-color: yellow;
+} */
+
+/* if the value ends with the given word then the style will be applied */
+/* syntax is dollar $ */
+/* [title$="example"] {
+  background-color: yellow;
+} */
+
+/* h1[class="heading"] {
+  background-color: yellow;
+} */
+
+/* web safe fonts */
+/* arial, verdana, time new roman, georgia, courier */
+
+/* .font-prop {
+  font-family: "Sofia", serif;
+  font-size: 30px;
+} */
+
+/* .unit-demo {
+  border: solid 1px green;
+  height: 300px;
+  width: 50%;
+} */
+
+.unit-one {
+  border: solid 1px blue;
+  width: 800px;
+}
+
+.unit-demo {
+  border: solid 1px green;
+  height: 300px;
+  width: 50%;
+}
+
+/* by default if you give a relative width, 
+then the screen width is taken (if it does not have a parent; or if body is parent) */
+
+.box {
+  border: solid 1px red;
+  width: 50vw;
+  /* relative height will work only if parent has a fixed/ known height */
+  height: 50vh;
+  /* height: 350px; */
+}
+
+.rem-demo {
+  font-size: 0.5rem;
 }
