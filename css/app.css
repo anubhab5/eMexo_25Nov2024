@@ -1,9 +1,9 @@
 /* universal selector */
 /* default CSS properties should be added in universal selector */
 * {
-  font-family: "Sofia", serif;
-  margin: 0;
-  padding: 0;
+  /* font-family: "Sofia", serif; */
+  /* margin: 0;
+  padding: 0; */
 }
 
 body {
@@ -529,3 +529,47 @@ then the screen width is taken (if it does not have a parent; or if body is pare
 .rem-demo {
   font-size: 0.5rem;
 }
+
+/* MEDIA QUERY */
+
+h3 {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 2rem;
+}
+
+/* @media only screen and (min-width: 785px) and (orientation='landscape') */
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  h3 {
+    background-color: #2f10de;
+    color: rgb(146, 231, 19);
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+* {
+  color: white;
+}
+
+.new-box {
+  /* border: solid 4px red;
+  width: 400px;
+  height: 200px;
+  border-radius: 50%; */
+  /* border-top-left-radius: 16px;
+  border-bottom-right-radius: 100%; */
+}
+
+/* .my-div {
+  color: green;
+}
+
+div {
+  color: red;
+}
+
+#my-id {
+  color: blue;
+} */
