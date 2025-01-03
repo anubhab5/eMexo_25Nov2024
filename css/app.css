@@ -534,23 +534,61 @@ then the screen width is taken (if it does not have a parent; or if body is pare
 
 h3 {
   background-color: #04aa6d;
-  color: white;
+  color: hsl(260, 70%, 36%);
   font-size: 2rem;
 }
 
-/* @media only screen and (min-width: 785px) and (orientation='landscape') */
+.media-query-demo {
+  color: rgb(0, 0, 100);
+  font-size: 3rem;
+}
 
-@media only screen and (min-width: 500px) and (max-width: 600px) {
+/* @media only screen and (min-width: 785px) and (orientation: landscape) */
+
+/* @media only screen and (min-width: 500px) and (max-width: 600px) {
   h3 {
     background-color: #2f10de;
     color: rgb(146, 231, 19);
     font-size: 1rem;
     text-align: center;
   }
+} */
+
+/* max-width: till the value styles will be applied */
+/* @media only screen and (max-width: 700px) {
+  h3 {
+    background-color: #2f10de;
+    color: rgb(146, 231, 19);
+    font-size: 1rem;
+    text-align: center;
+  }
+} */
+
+/* min-width is from the value to infinite */
+/* min-width should be smaller than max width */
+/* only is optional over here, in this example */
+/* since we are targeting only the screens */
+/* when not is used then the media type is mandatory */
+@media only screen and (min-width: 300px) and (max-width: 600px) and (orientation: portrait) {
+  h3 {
+    background-color: #2f10de;
+    color: rgb(146, 231, 19);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .media-query-demo {
+    font-size: 1rem;
+    color: red;
+  }
 }
 
-* {
+div {
+  height: 100vh;
+  width: 100vw;
   color: white;
+  background-image: url("../html/img_1.jpg");
+  /* background-repeat: no-repeat; */
 }
 
 .new-box {
