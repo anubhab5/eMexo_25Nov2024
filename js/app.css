@@ -1,0 +1,4 @@
+/* select the div who is the first child */
+div:first-child {
+  color: red;
+}
