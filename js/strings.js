@@ -30,3 +30,21 @@ console.log(str1.charCodeAt(4));
 const strList = str1.split();
 const strList1 = str1.split(" ");
 console.log(strList1);
+///////////////////////////////////////////////////////////////////////////////////
+// 10 Jan 2525
+// extracting methods
+// slice and substring
+let text = "0123456789abcdef";
+let fruits = "Apple, banana, kiwi";
+// slice(startIndex, endIndex); =>
+// Note: endIndex is not considered
+// 1st character of the string is in index 0
+// slice takes negative numbers also
+let part = fruits.slice(-12, -6);
+console.log("...");
+console.log(part);
+
+// substring(startIndex, endIndex)
+// let part1 = text.substring(0, 2);
+// console.log(part1);
+// console.log(text);
