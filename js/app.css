@@ -1,4 +1,9 @@
-/* select the div who is the first child */
-div:first-child {
-  color: red;
+.highlight1 {
+  color: rgb(104, 215, 56);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-bg {
+  background-color: blue;
 }
