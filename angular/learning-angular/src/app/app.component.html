@@ -1,4 +1,24 @@
-<h1>This is heading!!!!!</h1>
-{{ title }}
-{{ 1 + 1 }}
+<!-- interpolation -->
+
+<h3>{{ title }}</h3>
+
+<!-- Directive -->
+<!-- 1. manupulating the DOM -->
+<!-- structural directive -->
+<div *ngIf="quantity > 0">Product is available</div>
+<div *ngIf="quantity < 1">Product is not available</div>
+
+<!-- loop: ngFor -->
+
+<!-- <h3 *ngFor="let a of myMarks">{{ a }}</h3> -->
+<!-- 0 -->
+<!-- Steps:  -->
+<div *ngFor="let product of productList">
+  <app-card [productTitle]="product"></app-card>
+</div>
+
+<!-- 2. change  styles conditionally -->
+
+<!-- <app-card></app-card>
 <app-card></app-card>
+<app-card></app-card> -->
