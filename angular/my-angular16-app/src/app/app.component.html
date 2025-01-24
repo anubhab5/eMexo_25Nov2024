@@ -1,0 +1,10 @@
+<section class="container">
+  <app-card
+    *ngFor="let product of productList"
+    title="{{ product.title }}"
+    subtitle="{{ product.subtitle }}"
+    imageSrc="{{ product.imageUrl }}"
+    [actions]="cardActions"
+  >
+  </app-card>
+</section>
