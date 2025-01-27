@@ -8,6 +8,14 @@ import { CardHeaderComponent } from './card/card-header/card-header.component';
 import { CardBodyComponent } from './card/card-body/card-body.component';
 import { CardFooterComponent } from './card/card-footer/card-footer.component';
 import { StarterComponent } from './starter/starter.component';
+import { AboutComponent } from './about/about.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { RandomComponent } from './random/random.component';
 
 @NgModule({
   // all components needs to be present inside the declarations array
@@ -18,9 +26,16 @@ import { StarterComponent } from './starter/starter.component';
     CardBodyComponent,
     CardFooterComponent,
     StarterComponent,
+    AboutComponent,
+    ContactUsComponent,
+    HeaderComponent,
+    HomeComponent,
+    PricingComponent,
+    NotFoundComponent,
+    RandomComponent,
   ],
   // contains all the modules - custom module or a 3rd party module if installed
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, DashboardModule],
   //  add all services
   providers: [],
   bootstrap: [AppComponent],
