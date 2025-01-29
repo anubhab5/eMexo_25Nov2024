@@ -16,6 +16,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { RandomComponent } from './random/random.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DemosvcService } from './demosvc.service';
 
 @NgModule({
   // all components needs to be present inside the declarations array
@@ -35,7 +37,7 @@ import { RandomComponent } from './random/random.component';
     RandomComponent,
   ],
   // contains all the modules - custom module or a 3rd party module if installed
-  imports: [BrowserModule, AppRoutingModule, DashboardModule],
+  imports: [BrowserModule, AppRoutingModule, DashboardModule, HttpClientModule],
   //  add all services
   providers: [],
   bootstrap: [AppComponent],
