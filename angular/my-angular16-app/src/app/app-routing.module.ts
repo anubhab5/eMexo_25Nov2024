@@ -5,6 +5,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RandomComponent } from './random/random.component';
+import { ProductsComponent } from './products/products.component';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
   {
@@ -20,6 +22,14 @@ const routes: Routes = [
     component: PricingComponent,
   },
   //  Setting a default path
+  {
+    path: 'products',
+    component: ProductsComponent,
+  },
+  {
+    path: 'form',
+    component: FormComponent,
+  },
   {
     path: '',
     redirectTo: 'dashboard',

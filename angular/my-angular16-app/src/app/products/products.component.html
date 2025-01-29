@@ -1,0 +1,29 @@
+<p>products works!</p>
+
+<input type="button" value="Get Products" (click)="getProducts()" />
+
+<input type="button" value="Get Product" (click)="getProduct(2)" />
+
+<input
+  type="button"
+  value="Create Product"
+  (click)="createProduct({
+    name: 'Product 1',
+    description: 'Desc 1',
+    id: 3,
+  })"
+/>
+
+<input
+  type="button"
+  value="Update Product"
+  (click)="
+    updateProduct({
+      id: 1,
+      name: 'Product 1111',
+      description: 'Desc 1'
+    })
+  "
+/>
+
+<input type="button" value="Delete Product" (click)="deleteProduct(1)" />

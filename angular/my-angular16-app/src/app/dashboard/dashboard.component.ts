@@ -5,12 +5,11 @@ import { DemosvcService } from '../demosvc.service';
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
-  providers: [DemosvcService],
 })
 export class DashboardComponent {
   constructor(private svc: DemosvcService) {}
 
   getDetails() {
-    this.svc.getUserDetails();
+    // this.svc.getUserDetails();
   }
 }

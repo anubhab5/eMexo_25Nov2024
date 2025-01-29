@@ -11,6 +11,6 @@ export class HomeComponent {
 
   getUserList() {
     console.log('In component');
-    this.demoSvc.getUserDetails();
+    // this.demoSvc.getUserDetails();
   }
 }

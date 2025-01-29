@@ -17,7 +17,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { RandomComponent } from './random/random.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DemosvcService } from './demosvc.service';
+import { ProductsComponent } from './products/products.component';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   // all components needs to be present inside the declarations array
@@ -35,11 +37,20 @@ import { DemosvcService } from './demosvc.service';
     PricingComponent,
     NotFoundComponent,
     RandomComponent,
+    ProductsComponent,
+    FormComponent,
   ],
   // contains all the modules - custom module or a 3rd party module if installed
-  imports: [BrowserModule, AppRoutingModule, DashboardModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DashboardModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   //  add all services
   providers: [],
+
   bootstrap: [AppComponent],
 })
 export class AppModule {}

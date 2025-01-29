@@ -1,0 +1,80 @@
+<h2>User Registration Form</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <!-- Name Field -->
+  <label for="name">Name:</label>
+  <input id="name" type="text" formControlName="name" />
+  <div
+    *ngIf="
+      userForm.controls['name'].invalid && userForm.controls['name'].touched
+    "
+  >
+    <small *ngIf="userForm.controls['name'].errors?.['required']"
+      >Name is required.</small
+    >
+    <small *ngIf="userForm.controls['name'].errors?.['minlength']"
+      >Minimum 5 characters required.</small
+    >
+  </div>
+  <br />
+  <!-- Age Field -->
+  <label for="age">Age:</label>
+  <input id="age" type="number" formControlName="age" />
+  <div
+    *ngIf="userForm.controls['age'].invalid && userForm.controls['age'].touched"
+  >
+    <small *ngIf="userForm.controls['age'].errors?.['required']"
+      >Age is required.</small
+    >
+    <small *ngIf="userForm.controls['age'].errors?.['min']"
+      >Age must be at least 18.</small
+    >
+    <small *ngIf="userForm.controls['age'].errors?.['max']"
+      >Age cannot exceed 99.</small
+    >
+  </div>
+  <br />
+  <!-- Email Field -->
+  <label for="email">Email:</label>
+  <input id="email" type="email" formControlName="email" />
+  <div
+    *ngIf="
+      userForm.controls['email'].invalid && userForm.controls['email'].touched
+    "
+  >
+    <small *ngIf="userForm.controls['email'].errors?.['required']"
+      >Email is required.</small
+    >
+    <small *ngIf="userForm.controls['email'].errors?.['email']"
+      >Invalid email format.</small
+    >
+  </div>
+  <br />
+  <!-- Gender Radio -->
+  <label>Gender:</label>
+  <input type="radio" formControlName="gender" value="Male" /> Male
+  <input type="radio" formControlName="gender" value="Female" /> Female
+  <input type="radio" formControlName="gender" value="Other" /> Other
+  <div
+    *ngIf="
+      userForm.controls['gender'].invalid && userForm.controls['gender'].touched
+    "
+  >
+    <small>Gender is required.</small>
+  </div>
+  <br />
+  <!-- Terms Checkbox -->
+  <label>
+    <input type="checkbox" formControlName="terms" />
+    I accept the terms and conditions
+  </label>
+  <div
+    *ngIf="
+      userForm.controls['terms'].invalid && userForm.controls['terms'].touched
+    "
+  >
+    <small>You must accept the terms.</small>
+  </div>
+  <br />
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form>
