@@ -7,6 +7,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RandomComponent } from './random/random.component';
 import { ProductsComponent } from './products/products.component';
 import { FormComponent } from './form/form.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,14 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent,
+  },
+  {
+    path: 'pipe',
+    component: PipeComponent,
+  },
+  {
+    path: 'directives',
+    component: DirectivesComponent,
   },
   {
     path: 'form',

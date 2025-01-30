@@ -20,6 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './products/products.component';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PipeComponent } from './pipe/pipe.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { CustomPipe } from './custom.pipe';
 
 @NgModule({
   // all components needs to be present inside the declarations array
@@ -39,6 +42,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     RandomComponent,
     ProductsComponent,
     FormComponent,
+    PipeComponent,
+    DirectivesComponent,
+    CustomPipe,
   ],
   // contains all the modules - custom module or a 3rd party module if installed
   imports: [

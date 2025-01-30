@@ -1,0 +1,37 @@
+<h1>Pipe</h1>
+<p>
+  Pipes in Angular are used to transform data in templates. They allow you to
+  format values directly in the HTML template without modifying the original
+  data in the component. <br />
+  🔹 Example Use Cases: Formatting dates, currency, percentages, and text case
+  Filtering and sorting lists Custom data transformation
+</p>
+<hr />
+<!-- make the string as capital -->
+<p>all upper case</p>
+{{ ourCountry | uppercase }}
+<br />
+<!-- lowercase -->
+<p>all lower case</p>
+{{ ourCountry | lowercase }}
+<br />
+<!-- title case ::: first character of every word in capital letter-->
+{{ allLowerCase | titlecase }}
+<br />
+<!-- currency -->
+<!-- <p *ngFor="let price1 of priceList">
+  {{ price1 | currency : "INR" }}
+</p>
+{{ discount | percent }}
+<br />
+{{ currentDate | date : "fullDate" }}
+<br />
+{{ currentDate | date : "short" }}
+<br />
+{{ currentDate | date : "mediumTime" }}
+<p>
+  short, medium, long, full, shortDate, mediumDate, longDate, fullDate,
+  shortTime, mediumTime
+</p> -->
+<h3>custom pipe</h3>
+{{ myCustomNumber | discount : 4 }}

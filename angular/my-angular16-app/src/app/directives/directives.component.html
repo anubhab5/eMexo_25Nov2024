@@ -1,0 +1,14 @@
+<h3>Directives</h3>
+
+<h4>ngClass</h4>
+<p [ngClass]="'active'">This is a para!</p>
+<p [ngClass]="['active', 'bold']">This is a para!</p>
+
+<input value="Click" type="button" (click)="clicked()" />
+<p [ngClass]="{ active: isActive === true, passive: isActive === false }">
+  Conditional stuff!!!!
+</p>
+<br />
+
+<h4>ngStyle</h4>
+<p [ngStyle]="{ color: isActive ? 'blue' : 'red' }">learning angular</p>
