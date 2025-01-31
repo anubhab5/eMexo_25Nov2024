@@ -9,6 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { FormComponent } from './form/form.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: 'form',
     component: FormComponent,
+  },
+  {
+    path: 'lifecycle-hooks',
+    component: LifecycleHooksComponent,
   },
   {
     path: '',

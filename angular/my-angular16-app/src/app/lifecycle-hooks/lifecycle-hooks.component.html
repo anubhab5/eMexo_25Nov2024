@@ -1,0 +1,10 @@
+<p>lifecycle-hooks works!</p>
+
+<input type="button" value="Toggle Component" (click)="toggleComponent()" />
+<input type="button" value="Increment" (click)="incrementCounter()" />
+
+<app-child-in-parent
+  [counter]="counter"
+  [counter1]="counter1"
+  *ngIf="showComponent"
+></app-child-in-parent>

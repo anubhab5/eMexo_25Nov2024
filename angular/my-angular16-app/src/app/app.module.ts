@@ -23,6 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PipeComponent } from './pipe/pipe.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { CustomPipe } from './custom.pipe';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { ChildInParentComponent } from './child-in-parent/child-in-parent.component';
 
 @NgModule({
   // all components needs to be present inside the declarations array
@@ -45,6 +47,8 @@ import { CustomPipe } from './custom.pipe';
     PipeComponent,
     DirectivesComponent,
     CustomPipe,
+    LifecycleHooksComponent,
+    ChildInParentComponent,
   ],
   // contains all the modules - custom module or a 3rd party module if installed
   imports: [
