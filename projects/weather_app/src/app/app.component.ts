@@ -1,14 +1,31 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TodoComponent } from './todo/todo.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { WeatherService } from './weather.service';
 
 @Component({
   selector: 'app-root',
-  imports: [TodoComponent, CommonModule],
+  standalone: true,
+  imports: [CommonModule, FormsModule, HttpClientModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'todo';
+  city: string = '';
+  weatherData: any;
+
+  constructor(private weatherService: WeatherService) {}
+
+  getWeather() {
+    if (!this.city.trim()) return;
+    this.weatherService.getWeather(this.city).subscribe(
+      (data) => {
+        this.weatherData = data;
+      },
+      (error) => {
+        console.error('Error fetching weather data', error);
+      }
+    );
+  }
 }
