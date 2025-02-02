@@ -1,0 +1,71 @@
+/* General Container Styling */
+.container {
+  max-width: 550px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* TODO Card Styling */
+.todo-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+
+  /* Hover effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.todo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Status-based Background Colors */
+.pending-bg {
+  background: #fef4e8; /* Light Orange */
+  color: #d35400;
+}
+
+.active-bg {
+  background: #e3f2fd; /* Light Blue */
+  color: #007bff;
+}
+
+.done-bg {
+  background: #dff0d8; /* Light Green */
+  color: #28a745;
+  text-decoration: line-through;
+}
+
+/* Input and Button Styling */
+input {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #343a40;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
